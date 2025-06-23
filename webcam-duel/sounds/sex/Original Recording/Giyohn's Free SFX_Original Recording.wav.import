@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cj1t5eaq4gra4"
+path="res://.godot/imported/Giyohn's Free SFX_Original Recording.wav-ea98413340077ab1a3b1b5fc4c6506f2.sample"
+
+[deps]
+
+source_file="res://sounds/sex/Original Recording/Giyohn's Free SFX_Original Recording.wav"
+dest_files=["res://.godot/imported/Giyohn's Free SFX_Original Recording.wav-ea98413340077ab1a3b1b5fc4c6506f2.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

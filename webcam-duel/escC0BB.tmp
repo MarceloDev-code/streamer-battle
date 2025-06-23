@@ -1,0 +1,115 @@
+[gd_scene load_steps=9 format=3 uid="uid://uuyi605u8ghw"]
+
+[ext_resource type="Script" path="res://Escena.gd" id="1_8acra"]
+[ext_resource type="Texture2D" uid="uid://bifdthx7h4fhc" path="res://sprites/DALL·E 2024-10-30 17.12.27 - Pixel art of a small gamer bedroom with the desk, chair, and PC removed. The perspective faces the back, showing a cozy bed with colorful bedding, gam.webp" id="2_fma2c"]
+[ext_resource type="Texture2D" uid="uid://cgevp3by2aewx" path="res://sprites/DALL·E 2024-10-30 17.25.35 - Pixel art style small room with a cozy bed, a TV mounted on the wall, and many beer bottles and cans scattered around. The room is dimly lit with a wa.webp" id="2_xqj3f"]
+[ext_resource type="Texture2D" uid="uid://ddj5kor0qes70" path="res://sprites/otaku-1.png" id="3_2x0yr"]
+[ext_resource type="Texture2D" uid="uid://bowi47phgk078" path="res://sprites/main_character.png" id="3_gcv5x"]
+[ext_resource type="Texture2D" uid="uid://bfhollginmk4" path="res://sprites/cortar.png" id="5_p1tff"]
+[ext_resource type="Texture2D" uid="uid://bxwd7n27g4hls" path="res://sprites/Microfono.png" id="6_vo4gv"]
+[ext_resource type="Texture2D" uid="uid://dydtaprj23xc4" path="res://sprites/fondo-windows.png" id="7_s8dtq"]
+
+[node name="Escena" type="Node2D"]
+script = ExtResource("1_8acra")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 379.0
+offset_top = 630.0
+offset_right = 640.0
+offset_bottom = 708.0
+
+[node name="Marco" type="Panel" parent="UI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.026
+anchor_bottom = 0.026
+offset_left = 95.0
+offset_top = -108.028
+offset_right = 775.0
+offset_bottom = 43.972
+
+[node name="nombrePersonaje" type="Label" parent="UI/Marco"]
+layout_mode = 0
+offset_right = 258.0
+offset_bottom = 23.0
+
+[node name="CajaTexto" type="RichTextLabel" parent="UI/Marco"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 46.0
+offset_right = 676.0
+offset_bottom = 153.0
+
+[node name="opcion1" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = -297.0
+offset_top = -615.0
+offset_right = -182.0
+offset_bottom = -552.0
+icon = ExtResource("6_vo4gv")
+alignment = 0
+autowrap_mode = 2
+
+[node name="opcion2" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = -128.0
+offset_top = -544.0
+offset_right = -12.0
+offset_bottom = -474.0
+alignment = 0
+autowrap_mode = 2
+
+[node name="opcion3" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = -295.0
+offset_top = -541.0
+offset_right = -181.0
+offset_bottom = -477.0
+alignment = 0
+autowrap_mode = 2
+
+[node name="opcion4" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = -128.0
+offset_top = -614.0
+offset_right = -13.0
+offset_bottom = -551.0
+
+[node name="Background2" type="Sprite2D" parent="."]
+position = Vector2(510.5, 411.25)
+scale = Vector2(1.31543, 0.814941)
+texture = ExtResource("2_xqj3f")
+
+[node name="Backgroundf" type="Sprite2D" parent="."]
+position = Vector2(830, 249)
+scale = Vector2(0.625, 0.445313)
+texture = ExtResource("2_fma2c")
+
+[node name="MC" type="Sprite2D" parent="."]
+position = Vector2(896, 294)
+scale = Vector2(1.47495, 1.48449)
+texture = ExtResource("3_2x0yr")
+
+[node name="Rival" type="Sprite2D" parent="."]
+position = Vector2(209, 404)
+scale = Vector2(0.156831, 0.136166)
+texture = ExtResource("3_gcv5x")
+
+[node name="Cortar" type="Sprite2D" parent="."]
+position = Vector2(723, 412)
+scale = Vector2(0.42688, 0.374737)
+texture = ExtResource("5_p1tff")
+
+[node name="microfono" type="Sprite2D" parent="."]
+position = Vector2(610, 413)
+scale = Vector2(0.447841, 0.390836)
+texture = ExtResource("6_vo4gv")
+
+[node name="Caja screen" type="Sprite2D" parent="."]
+position = Vector2(828, 293)
+scale = Vector2(2.17424, 1.89426)
+texture = ExtResource("7_s8dtq")
+
+[connection signal="pressed" from="UI/opcion1" to="." method="_on_opcion_1_pressed"]

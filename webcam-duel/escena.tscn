@@ -1,0 +1,186 @@
+[gd_scene load_steps=14 format=3 uid="uid://uuyi605u8ghw"]
+
+[ext_resource type="Script" path="res://Escena.gd" id="1_8acra"]
+[ext_resource type="Texture2D" uid="uid://bifdthx7h4fhc" path="res://sprites/room1.webp" id="2_fma2c"]
+[ext_resource type="Texture2D" uid="uid://cgevp3by2aewx" path="res://sprites/room2.webp" id="2_xqj3f"]
+[ext_resource type="Texture2D" uid="uid://bowi47phgk078" path="res://sprites/main_character.png" id="3_gcv5x"]
+[ext_resource type="PackedScene" uid="uid://daaeidkth3rlw" path="res://otaku.tscn" id="4_voflb"]
+[ext_resource type="Texture2D" uid="uid://bfhollginmk4" path="res://sprites/cortar.png" id="5_p1tff"]
+[ext_resource type="Texture2D" uid="uid://bxwd7n27g4hls" path="res://sprites/Microfono.png" id="6_vo4gv"]
+[ext_resource type="Texture2D" uid="uid://dydtaprj23xc4" path="res://sprites/fondo-windows.png" id="7_s8dtq"]
+[ext_resource type="Texture2D" uid="uid://bdfh5m0tjh84n" path="res://sprites/Menu-2-01_0048__Group_.png" id="9_mtkuc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_52fy6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sv6q0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i4a50"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_228iy"]
+
+[node name="Escena" type="Node2D"]
+script = ExtResource("1_8acra")
+
+[node name="Background2" type="Sprite2D" parent="."]
+position = Vector2(957.25, 543.375)
+scale = Vector2(1.87061, 1.05981)
+texture = ExtResource("2_xqj3f")
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 58.0
+offset_top = 19.0
+offset_right = 92.0
+offset_bottom = 54.0
+text = "HP"
+tab_size = 13
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 52.0
+offset_top = 74.0
+offset_right = 133.0
+offset_bottom = 127.0
+text = "CRINGE"
+tab_size = 13
+
+[node name="Backgroundf" type="Sprite2D" parent="."]
+position = Vector2(1480.5, 500.5)
+scale = Vector2(0.77832, 0.612305)
+texture = ExtResource("2_fma2c")
+
+[node name="MC2" parent="." instance=ExtResource("4_voflb")]
+position = Vector2(1471, 558)
+scale = Vector2(2.07492, 1.84508)
+
+[node name="Rival" type="Sprite2D" parent="."]
+position = Vector2(291, 842)
+scale = Vector2(0.156831, 0.136166)
+texture = ExtResource("3_gcv5x")
+
+[node name="Cortar" type="Sprite2D" parent="."]
+position = Vector2(1284, 706)
+scale = Vector2(0.42688, 0.374737)
+texture = ExtResource("5_p1tff")
+
+[node name="microfono" type="Sprite2D" parent="."]
+position = Vector2(1157, 713)
+scale = Vector2(0.436042, 0.390836)
+texture = ExtResource("6_vo4gv")
+
+[node name="Caja screen" type="Sprite2D" parent="."]
+position = Vector2(1498.5, 550.5)
+scale = Vector2(2.81145, 2.43607)
+texture = ExtResource("7_s8dtq")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 399.0
+offset_top = 965.0
+offset_right = 799.0
+offset_bottom = 1061.0
+
+[node name="Marco" type="Panel" parent="UI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.026
+anchor_bottom = 0.026
+offset_left = -397.0
+offset_top = -129.496
+offset_right = 1511.0
+offset_bottom = 115.504
+
+[node name="Sprite2D" type="Sprite2D" parent="UI/Marco"]
+visible = false
+position = Vector2(961.353, 112.778)
+scale = Vector2(2.97406, 1.50259)
+texture = ExtResource("9_mtkuc")
+
+[node name="nombrePersonaje" type="Label" parent="UI/Marco"]
+layout_mode = 0
+offset_left = 115.0
+offset_top = 6.0
+offset_right = 413.0
+offset_bottom = 47.0
+
+[node name="CajaTexto" type="RichTextLabel" parent="UI/Marco"]
+layout_mode = 0
+offset_left = 126.0
+offset_top = 45.0
+offset_right = 1687.0
+offset_bottom = 245.0
+tab_size = 10
+
+[node name="Sprite2D" type="Sprite2D" parent="UI"]
+position = Vector2(-180, -741)
+scale = Vector2(0.522224, 0.995639)
+texture = ExtResource("9_mtkuc")
+
+[node name="opcion1" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = -305.0
+offset_top = -809.0
+offset_right = -43.0
+offset_bottom = -675.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_52fy6")
+autowrap_mode = 2
+
+[node name="Sprite2D2" type="Sprite2D" parent="UI"]
+position = Vector2(240, -559)
+scale = Vector2(0.506211, 0.988272)
+texture = ExtResource("9_mtkuc")
+
+[node name="opcion2" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = 137.0
+offset_top = -625.0
+offset_right = 370.0
+offset_bottom = -495.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sv6q0")
+autowrap_mode = 2
+
+[node name="Sprite2D3" type="Sprite2D" parent="UI"]
+position = Vector2(-182, -559)
+scale = Vector2(0.500391, 0.996418)
+texture = ExtResource("9_mtkuc")
+
+[node name="opcion3" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = -295.0
+offset_top = -619.0
+offset_right = -49.0
+offset_bottom = -495.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i4a50")
+autowrap_mode = 2
+
+[node name="Sprite2D4" type="Sprite2D" parent="UI"]
+position = Vector2(243, -743)
+scale = Vector2(0.513785, 1.00281)
+texture = ExtResource("9_mtkuc")
+
+[node name="opcion4" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = 119.0
+offset_top = -820.0
+offset_right = 379.0
+offset_bottom = -666.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_228iy")
+
+[node name="cringe" type="ProgressBar" parent="."]
+offset_top = 73.0
+offset_right = 1917.0
+offset_bottom = 150.0
+step = 1.0
+show_percentage = false
+
+[node name="hp" type="ProgressBar" parent="."]
+offset_left = 3.0
+offset_top = 1.0
+offset_right = 1920.0
+offset_bottom = 78.0
+step = 1.0
+value = 100.0
+
+[connection signal="pressed" from="UI/opcion1" to="." method="_on_opcion_1_pressed"]
+[connection signal="pressed" from="UI/opcion2" to="." method="_on_opcion_2_pressed"]
+[connection signal="pressed" from="UI/opcion3" to="." method="_on_opcion_3_pressed"]
+[connection signal="pressed" from="UI/opcion4" to="." method="_on_opcion_4_pressed"]

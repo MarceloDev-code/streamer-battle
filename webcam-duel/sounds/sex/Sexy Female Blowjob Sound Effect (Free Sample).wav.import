@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bo5ispb3csubj"
+path="res://.godot/imported/Sexy Female Blowjob Sound Effect (Free Sample).wav-3ee3b681240b146552b918e1ddf4d1d4.sample"
+
+[deps]
+
+source_file="res://sounds/sex/Sexy Female Blowjob Sound Effect (Free Sample).wav"
+dest_files=["res://.godot/imported/Sexy Female Blowjob Sound Effect (Free Sample).wav-3ee3b681240b146552b918e1ddf4d1d4.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

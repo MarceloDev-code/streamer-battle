@@ -1,0 +1,58 @@
+[gd_scene load_steps=9 format=3 uid="uid://glkkmdcp62bn"]
+
+[ext_resource type="Texture2D" uid="uid://j4bk6qoyrlwu" path="res://sprites/otaku-2.png" id="2_r8qsh"]
+[ext_resource type="Texture2D" uid="uid://cce488lca354l" path="res://sprites/otaku-3.png" id="3_00lt8"]
+[ext_resource type="Texture2D" uid="uid://b3huik0argyqn" path="res://otaku-ero-1.png" id="3_mjk4n"]
+[ext_resource type="AudioStream" uid="uid://bcysqodha1dc2" path="res://sounds/music/Right-Side-Goose.mp3" id="4_jlupr"]
+[ext_resource type="Texture2D" uid="uid://bg531a1drj6wv" path="res://otaku-ero-2.png" id="4_v762v"]
+[ext_resource type="Texture2D" uid="uid://c8o4fq4vuc6fe" path="res://otaku-ero-4.png" id="5_1gfo5"]
+[ext_resource type="Texture2D" uid="uid://qsff74rqpq5n" path="res://otaku-ero-3.png" id="6_2hd21"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_53ag7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_r8qsh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_00lt8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_00lt8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_mjk4n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_v762v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_1gfo5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2hd21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_v762v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_v762v")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[node name="MC2" type="AnimatedSprite2D"]
+position = Vector2(859.75, 281.25)
+scale = Vector2(1.8468, 1.5459)
+sprite_frames = SubResource("SpriteFrames_53ag7")
+autoplay = "default"
+frame_progress = 0.409042
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_jlupr")
+volume_db = -12.181
+pitch_scale = 1.5
+autoplay = true
+parameters/looping = true

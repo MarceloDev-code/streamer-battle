@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=3 uid="uid://daaeidkth3rlw"]
+
+[ext_resource type="Texture2D" uid="uid://ddj5kor0qes70" path="res://sprites/otaku-1.png" id="1_mnyyr"]
+[ext_resource type="Texture2D" uid="uid://j4bk6qoyrlwu" path="res://sprites/otaku-2.png" id="2_is31u"]
+[ext_resource type="Texture2D" uid="uid://cce488lca354l" path="res://sprites/otaku-3.png" id="3_j5o3p"]
+[ext_resource type="AudioStream" uid="uid://bcysqodha1dc2" path="res://sounds/music/Right-Side-Goose.mp3" id="4_shxsv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_53ag7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_mnyyr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_mnyyr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_mnyyr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_is31u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_j5o3p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_mnyyr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_is31u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_is31u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_j5o3p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_j5o3p")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[node name="MC2" type="AnimatedSprite2D"]
+position = Vector2(859.75, 281.25)
+scale = Vector2(1.8468, 1.5459)
+sprite_frames = SubResource("SpriteFrames_53ag7")
+autoplay = "default"
+frame_progress = 0.73843
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_shxsv")
+volume_db = -12.181
+pitch_scale = 1.5
+autoplay = true
+parameters/looping = true

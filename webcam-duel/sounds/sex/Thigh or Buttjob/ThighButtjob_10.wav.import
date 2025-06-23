@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c7p2ibrnev82k"
+path="res://.godot/imported/ThighButtjob_10.wav-30388ce88883b83ac652437f9195b91d.sample"
+
+[deps]
+
+source_file="res://sounds/sex/Thigh or Buttjob/ThighButtjob_10.wav"
+dest_files=["res://.godot/imported/ThighButtjob_10.wav-30388ce88883b83ac652437f9195b91d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://3oiyy5qq8k3c"
+path="res://.godot/imported/Bed boing.ogg-84ef718ee33e088f312d85220a0d730d.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/sex/Bed boing.ogg"
+dest_files=["res://.godot/imported/Bed boing.ogg-84ef718ee33e088f312d85220a0d730d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

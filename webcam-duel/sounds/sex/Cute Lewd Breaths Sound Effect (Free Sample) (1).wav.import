@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://kx65c1aja1xe"
+path="res://.godot/imported/Cute Lewd Breaths Sound Effect (Free Sample) (1).wav-8954dc7801aca9a2f79c9f32296f65f9.sample"
+
+[deps]
+
+source_file="res://sounds/sex/Cute Lewd Breaths Sound Effect (Free Sample) (1).wav"
+dest_files=["res://.godot/imported/Cute Lewd Breaths Sound Effect (Free Sample) (1).wav-8954dc7801aca9a2f79c9f32296f65f9.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

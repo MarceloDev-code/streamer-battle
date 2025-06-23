@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://k35k5r10kml0"
+path="res://.godot/imported/Sexy Female Moan Sound Effect (Free Sample).wav-25d84329e76c92fc54f62822a89aa76d.sample"
+
+[deps]
+
+source_file="res://sounds/sex/Sexy Female Moan Sound Effect (Free Sample).wav"
+dest_files=["res://.godot/imported/Sexy Female Moan Sound Effect (Free Sample).wav-25d84329e76c92fc54f62822a89aa76d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

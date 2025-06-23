@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://byfoas5fh3yv3"
+path="res://.godot/imported/Mommy Voice Female Moan Sound Effect (Free Sample).wav-f3e83e95df56f5488bdf6bdb1733337c.sample"
+
+[deps]
+
+source_file="res://sounds/sex/Mommy Voice Female Moan Sound Effect (Free Sample).wav"
+dest_files=["res://.godot/imported/Mommy Voice Female Moan Sound Effect (Free Sample).wav-f3e83e95df56f5488bdf6bdb1733337c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
